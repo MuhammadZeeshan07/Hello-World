@@ -15,19 +15,20 @@ public class Configurations {
 	public static WebDriverWait wait;
 	public static WebDriver driver;
 
-	
 	static {
 		if (driver == null) {
-			System.setProperty("webdriver.chrome.driver", "D:/driver/chromedriver.exe");
+
+			String chromeDriverPath = System.getProperty("user.dir") + "/driver/chromedriver.exe";
+			System.setProperty("webdriver.chrome.driver", chromeDriverPath);
 			ChromeOptions options = new ChromeOptions();
-			//options.addArguments("--headless=new");
+			// options.addArguments("--headless=new");
 			options.addArguments("--remote-allow-origins=*");
 			driver = new ChromeDriver(options);
 			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 			wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 			driver.manage().window().maximize();
 			options.addArguments("--disable-notifications");
-		//	driver.manage().window().setSize(new Dimension(1920, 1080));
+			// driver.manage().window().setSize(new Dimension(1920, 1080));
 			driver.get("https://dev.youcater.me/en");
 		}
 	}

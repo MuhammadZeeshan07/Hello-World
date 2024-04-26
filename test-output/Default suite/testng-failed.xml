@@ -3,16 +3,24 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="org.youCater.userSanityTestCases.AcceptQuoteTestCases">
+      <class name="org.youCater.userSanityTestCases.AddPrivateEventTestCases">
         <methods>
-          <include name="selectActiveQuote"/>
-          <include name="selectEventsOnHomePage"/>
-          <include name="AcceptQuote"/>
-          <include name="makePayment"/>
-          <include name="viewPartnerProfile"/>
+          <include name="privateDateAndTimeSelection"/>
+          <include name="privateGoToHomePage"/>
+          <include name="privateSignIn"/>
+          <include name="privateEventTypeSelection"/>
+          <include name="privateCuisineTypeSelection"/>
+          <include name="privateGuestSelection"/>
+          <include name="privateEventVenueSelection"/>
+          <include name="privateBudgetSelection"/>
+          <include name="privateAddEventName"/>
+          <include name="prviateOccasionTypeSelection"/>
+          <include name="privateEventSummary"/>
+          <include name="privateFoodTypeSelection"/>
+          <include name="privateProviderSelection"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- org.youCater.userSanityTestCases.AcceptQuoteTestCases -->
+      </class> <!-- org.youCater.userSanityTestCases.AddPrivateEventTestCases -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -14,7 +14,9 @@ public class VendorConfigurations {
 
 	static {
 		if (driver == null) {
-			System.setProperty("webdriver.chrome.driver", "D:/driver/chromedriver.exe");
+			
+			String chromeDriverPath = System.getProperty("user.dir") + "/driver/chromedriver.exe";
+			System.setProperty("webdriver.chrome.driver", chromeDriverPath);
 			ChromeOptions options = new ChromeOptions();
 		//	options.addArguments("--headless=new");
 			options.addArguments("--remote-allow-origins=*");
