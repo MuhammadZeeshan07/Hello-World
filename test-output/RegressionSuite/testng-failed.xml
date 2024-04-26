@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [RegressionSuite]" guice-stage="DEVELOPMENT">
+  <parameter name="configurations" value="org.youCater.userConfigurationsAndElements.Configurations"/>
+  <listeners>
+    <listener class-name="org.youCater.utils.Listener"/>
+  </listeners>
+  <test thread-count="5" name="UserRegressionTestCases(failed)">
+    <classes>
+      <class name="org.youCater.userRegressionTestCases.FiltersTestCases">
+        <methods>
+          <include name="selectCaterer"/>
+          <include name="applyFilter"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- org.youCater.userRegressionTestCases.FiltersTestCases -->
+      <class name="org.youCater.userRegressionTestCases.PartnerRegistrationTestCases">
+        <methods>
+          <include name="partnerRegistration"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- org.youCater.userRegressionTestCases.PartnerRegistrationTestCases -->
+    </classes>
+  </test> <!-- UserRegressionTestCases(failed) -->
+</suite> <!-- Failed suite [RegressionSuite] -->
