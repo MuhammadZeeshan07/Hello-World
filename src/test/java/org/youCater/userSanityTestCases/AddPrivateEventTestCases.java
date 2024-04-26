@@ -234,6 +234,7 @@ public class AddPrivateEventTestCases extends Configurations {
 		Thread.sleep(2000);
 		addEventElements.goToNextPage();
 		Thread.sleep(2000);
+		Thread.sleep(2000);
 
 	}
 
