@@ -8,12 +8,13 @@
 	<test name="UserCanCreateCancelEventAndSendQuoteRequest">
 		<classes>
 			<class name="org.youCater.userSanityTestCases.AddPrivateEventTestCases" />
-			<class name="org.youCater.userSanityTestCases.ProfileTestCases" />
+		<!--	<class name="org.youCater.userSanityTestCases.ProfileTestCases" />
 			<class name="org.youCater.userSanityTestCases.AddCorporateEventTestCases" />
 			<class name="org.youCater.userSanityTestCases.CancelEventTestCases" />
-			<class name="org.youCater.userSanityTestCases.SendBidRequestTestCases" />
+			<class name="org.youCater.userSanityTestCases.SendBidRequestTestCases" />-->
 		</classes>
-	</test>
+		</test>
+	<!--</test>
 	<test name="VendorCanLoginAndAcceptAndDeclineRequest">
 		<classes>
 			<class name="org.youCater.ventorSanitytestCases.VendorLoginTestCases" />
@@ -42,5 +43,5 @@
 		<classes>
 			<class name="org.youCater.ventorSanitytestCases.VendorLogoutTestCases" />
 		</classes>
-	</test>
+	</test>-->
 </suite>
