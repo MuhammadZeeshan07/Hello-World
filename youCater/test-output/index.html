@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-RegressionSuite" class="navigator-link">
+              <span class="suite-name border-passed">RegressionSuite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-RegressionSuite" class="navigator-link ">
+                    <span>C:\Users\Dell\Downloads\youCater\youCater\testng_regression.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-RegressionSuite" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-RegressionSuite" class="navigator-link ">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-RegressionSuite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-RegressionSuite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-RegressionSuite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-RegressionSuite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">14 methods,   14 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-RegressionSuite" class="hide-methods passed suite-RegressionSuite"> (hide)</a> <!-- hide-methods passed suite-RegressionSuite -->
+                      <a href="#" panel-name="suite-RegressionSuite" class="show-methods passed suite-RegressionSuite"> (show)</a> <!-- show-methods passed suite-RegressionSuite -->
+                    </span>
+                    <div class="method-list-content passed suite-RegressionSuite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-RegressionSuite" title="org.youCater.userRegressionTestCases.SignUpTestCases" class="method navigator-link" hash-for-method="DoSignUp">DoSignUp</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-RegressionSuite" title="org.youCater.userRegressionTestCases.ForgotPasswordTestCases" class="method navigator-link" hash-for-method="ForgotPassword">ForgotPassword</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-RegressionSuite" title="org.youCater.userRegressionTestCases.FiltersTestCases" class="method navigator-link" hash-for-method="applyFilter">applyFilter</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-RegressionSuite" title="org.youCater.userRegressionTestCases.FiltersTestCases" class="method navigator-link" hash-for-method="clearFilter">clearFilter</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-RegressionSuite" title="org.youCater.userRegressionTestCases.DeleteUserTestCases" class="method navigator-link" hash-for-method="deleteUserAccount">deleteUserAccount</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-RegressionSuite" title="org.youCater.userRegressionTestCases.SignUpTestCases" class="method navigator-link" hash-for-method="goToProfile">goToProfile</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-RegressionSuite" title="org.youCater.userRegressionTestCases.ProfileTestCases" class="method navigator-link" hash-for-method="goToProfile">goToProfile</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-RegressionSuite" title="org.youCater.userRegressionTestCases.FiltersTestCases" class="method navigator-link" hash-for-method="loginFromHomePage">loginFromHomePage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-RegressionSuite" title="org.youCater.userRegressionTestCases.ProfileTestCases" class="method navigator-link" hash-for-method="logout">logout</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-RegressionSuite" title="org.youCater.userRegressionTestCases.ProfileTestCases" class="method navigator-link" hash-for-method="openPrivacyPolicy">openPrivacyPolicy</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-RegressionSuite" title="org.youCater.userRegressionTestCases.ProfileTestCases" class="method navigator-link" hash-for-method="openTermsAndCondition">openTermsAndCondition</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-RegressionSuite" title="org.youCater.userRegressionTestCases.PartnerRegistrationTestCases" class="method navigator-link" hash-for-method="partnerRegistration">partnerRegistration</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-RegressionSuite" title="org.youCater.userRegressionTestCases.FiltersTestCases" class="method navigator-link" hash-for-method="searchCaterer">searchCaterer</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-RegressionSuite" title="org.youCater.userRegressionTestCases.FiltersTestCases" class="method navigator-link" hash-for-method="selectCaterer">selectCaterer</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-RegressionSuite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-RegressionSuite" class="panel RegressionSuite">
+          <div class="suite-RegressionSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">org.youCater.userRegressionTestCases.ForgotPasswordTestCases</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="ForgotPassword">
+                  </a> <!-- ForgotPassword -->
+                  <span class="method-name">ForgotPassword</span>
+                  <em>
+(Verify forgot password functionality)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-RegressionSuite-class-passed -->
+          <div class="suite-RegressionSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">org.youCater.userRegressionTestCases.DeleteUserTestCases</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="deleteUserAccount">
+                  </a> <!-- deleteUserAccount -->
+                  <span class="method-name">deleteUserAccount</span>
+                  <em>
+(Profile: Verify user account deleted successFully)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-RegressionSuite-class-passed -->
+          <div class="suite-RegressionSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">org.youCater.userRegressionTestCases.PartnerRegistrationTestCases</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="partnerRegistration">
+                  </a> <!-- partnerRegistration -->
+                  <span class="method-name">partnerRegistration</span>
+                  <em>
+(HomePage: Verify that partner registered successfully)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-RegressionSuite-class-passed -->
+          <div class="suite-RegressionSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">org.youCater.userRegressionTestCases.SignUpTestCases</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="DoSignUp">
+                  </a> <!-- DoSignUp -->
+                  <span class="method-name">DoSignUp</span>
+                  <em>
+(Sign Up)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="goToProfile">
+                  </a> <!-- goToProfile -->
+                  <span class="method-name">goToProfile</span>
+                  <em>
+(Profile: Verify navigation to the user profile)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-RegressionSuite-class-passed -->
+          <div class="suite-RegressionSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">org.youCater.userRegressionTestCases.FiltersTestCases</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="applyFilter">
+                  </a> <!-- applyFilter -->
+                  <span class="method-name">applyFilter</span>
+                  <em>
+(User Filters: Verify that filters applied successfully)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="clearFilter">
+                  </a> <!-- clearFilter -->
+                  <span class="method-name">clearFilter</span>
+                  <em>
+(User Filters: Clear filters)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginFromHomePage">
+                  </a> <!-- loginFromHomePage -->
+                  <span class="method-name">loginFromHomePage</span>
+                  <em>
+(HomePage: Verify user logged in successfully from the homepage)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="searchCaterer">
+                  </a> <!-- searchCaterer -->
+                  <span class="method-name">searchCaterer</span>
+                  <em>
+(Search Caterer: Verify caterer search is working in user directory)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="selectCaterer">
+                  </a> <!-- selectCaterer -->
+                  <span class="method-name">selectCaterer</span>
+                  <em>
+(Select Caterer: Verify that caterer selection is working after search)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-RegressionSuite-class-passed -->
+          <div class="suite-RegressionSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">org.youCater.userRegressionTestCases.ProfileTestCases</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="goToProfile">
+                  </a> <!-- goToProfile -->
+                  <span class="method-name">goToProfile</span>
+                  <em>
+(Profile: Verify navigation to the user profile)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="logout">
+                  </a> <!-- logout -->
+                  <span class="method-name">logout</span>
+                  <em>
+(Profile: Verify logout funtionality)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="openPrivacyPolicy">
+                  </a> <!-- openPrivacyPolicy -->
+                  <span class="method-name">openPrivacyPolicy</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="openTermsAndCondition">
+                  </a> <!-- openTermsAndCondition -->
+                  <span class="method-name">openTermsAndCondition</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-RegressionSuite-class-passed -->
+        </div> <!-- panel RegressionSuite -->
+        <div panel-name="test-xml-RegressionSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\Dell\Downloads\youCater\youCater\testng_regression.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;RegressionSuite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;parameter name=&quot;configurations&quot; value=&quot;org.youCater.userConfigurationsAndElements.Configurations&quot;/&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;org.youCater.utils.Listener&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;UserRegressionTestCases&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;org.youCater.userRegressionTestCases.SignUpTestCases&quot;/&gt;
+      &lt;class name=&quot;org.youCater.userRegressionTestCases.DeleteUserTestCases&quot;/&gt;
+      &lt;class name=&quot;org.youCater.userRegressionTestCases.ForgotPasswordTestCases&quot;/&gt;
+      &lt;class name=&quot;org.youCater.userRegressionTestCases.FiltersTestCases&quot;/&gt;
+      &lt;class name=&quot;org.youCater.userRegressionTestCases.ProfileTestCases&quot;/&gt;
+      &lt;class name=&quot;org.youCater.userRegressionTestCases.PartnerRegistrationTestCases&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- UserRegressionTestCases --&gt;
+&lt;/suite&gt; &lt;!-- RegressionSuite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-RegressionSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for RegressionSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">UserRegressionTestCases (6 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-RegressionSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for RegressionSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-RegressionSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for RegressionSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_RegressionSuite');
+function tableData_RegressionSuite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(14);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'applyFilter')
+data.setCell(0, 2, 'org.youCater.userRegressionTestCases.FiltersTestCases')
+data.setCell(0, 3, 24257);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'partnerRegistration')
+data.setCell(1, 2, 'org.youCater.userRegressionTestCases.PartnerRegistrationTestCases')
+data.setCell(1, 3, 22533);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'DoSignUp')
+data.setCell(2, 2, 'org.youCater.userRegressionTestCases.SignUpTestCases')
+data.setCell(2, 3, 20995);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'ForgotPassword')
+data.setCell(3, 2, 'org.youCater.userRegressionTestCases.ForgotPasswordTestCases')
+data.setCell(3, 3, 17526);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'openPrivacyPolicy')
+data.setCell(4, 2, 'org.youCater.userRegressionTestCases.ProfileTestCases')
+data.setCell(4, 3, 16819);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'openTermsAndCondition')
+data.setCell(5, 2, 'org.youCater.userRegressionTestCases.ProfileTestCases')
+data.setCell(5, 3, 16754);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'goToProfile')
+data.setCell(6, 2, 'org.youCater.userRegressionTestCases.ProfileTestCases')
+data.setCell(6, 3, 12085);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'selectCaterer')
+data.setCell(7, 2, 'org.youCater.userRegressionTestCases.FiltersTestCases')
+data.setCell(7, 3, 10695);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'deleteUserAccount')
+data.setCell(8, 2, 'org.youCater.userRegressionTestCases.DeleteUserTestCases')
+data.setCell(8, 3, 10608);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'loginFromHomePage')
+data.setCell(9, 2, 'org.youCater.userRegressionTestCases.FiltersTestCases')
+data.setCell(9, 3, 10170);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'searchCaterer')
+data.setCell(10, 2, 'org.youCater.userRegressionTestCases.FiltersTestCases')
+data.setCell(10, 3, 9120);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'logout')
+data.setCell(11, 2, 'org.youCater.userRegressionTestCases.ProfileTestCases')
+data.setCell(11, 3, 8358);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'goToProfile')
+data.setCell(12, 2, 'org.youCater.userRegressionTestCases.SignUpTestCases')
+data.setCell(12, 3, 6874);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'clearFilter')
+data.setCell(13, 2, 'org.youCater.userRegressionTestCases.FiltersTestCases')
+data.setCell(13, 3, 2121);
+window.suiteTableData['RegressionSuite']= { tableData: data, tableDiv: 'times-div-RegressionSuite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 3 minutes</span>
+              <div id="times-div-RegressionSuite">
+              </div> <!-- times-div-RegressionSuite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-RegressionSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for RegressionSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-RegressionSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">5 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">org.youCater.userRegressionTestCases.ForgotPasswordTestCases</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">tearDown</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">org.youCater.userRegressionTestCases.PartnerRegistrationTestCases</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">tearDown</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">org.youCater.userRegressionTestCases.DeleteUserTestCases</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">tearDown</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">org.youCater.userRegressionTestCases.FiltersTestCases</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">tearDown</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">org.youCater.userRegressionTestCases.ProfileTestCases</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">tearDown</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-RegressionSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">org.youCater.userRegressionTestCases.SignUpTestCases</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">DoSignUp</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">goToProfile</span>
+                <span class="method-start">21009 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">org.youCater.userRegressionTestCases.DeleteUserTestCases</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">deleteUserAccount</span>
+                <span class="method-start">27887 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">org.youCater.userRegressionTestCases.ForgotPasswordTestCases</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">ForgotPassword</span>
+                <span class="method-start">38497 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">org.youCater.userRegressionTestCases.FiltersTestCases</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">loginFromHomePage</span>
+                <span class="method-start">56025 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">searchCaterer</span>
+                <span class="method-start">66200 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">selectCaterer</span>
+                <span class="method-start">75324 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">applyFilter</span>
+                <span class="method-start">86020 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">clearFilter</span>
+                <span class="method-start">110282 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">org.youCater.userRegressionTestCases.ProfileTestCases</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">goToProfile</span>
+                <span class="method-start">112407 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">openPrivacyPolicy</span>
+                <span class="method-start">124495 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">openTermsAndCondition</span>
+                <span class="method-start">141319 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">logout</span>
+                <span class="method-start">158078 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">org.youCater.userRegressionTestCases.PartnerRegistrationTestCases</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">partnerRegistration</span>
+                <span class="method-start">166438 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">org.youCater.userRegressionTestCases.SignUpTestCases</div> <!-- chronological-class-name -->
+              <div class="configuration-suite after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">192426 ms</span>
+              </div> <!-- configuration-suite after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>
