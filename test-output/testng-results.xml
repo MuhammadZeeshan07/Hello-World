@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="13" passed="12" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-01-31T21:33:47 PKT" name="Default suite" finished-at="2025-01-31T21:34:47 PKT" duration-ms="60315">
+    <groups>
+    </groups>
+    <test started-at="2025-01-31T21:33:47 PKT" name="Default test" finished-at="2025-01-31T21:34:47 PKT" duration-ms="60315">
+      <class name="org.youCater.userSanityTestCases.ZaraExperienceTestCases">
+        <test-method signature="startPlanning()[pri:0, instance:org.youCater.userSanityTestCases.ZaraExperienceTestCases@4b6579e8]" started-at="2025-01-31T21:33:47 PKT" name="startPlanning" description="Initiate Zara Experience: Verify start planning functionality" finished-at="2025-01-31T21:33:53 PKT" duration-ms="6308" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startPlanning -->
+        <test-method signature="privateEventTypeSelection()[pri:1, instance:org.youCater.userSanityTestCases.ZaraExperienceTestCases@4b6579e8]" started-at="2025-01-31T21:33:53 PKT" name="privateEventTypeSelection" description="PrivateEvent: Verify selection of event type funtionality" finished-at="2025-01-31T21:33:56 PKT" duration-ms="2534" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- privateEventTypeSelection -->
+        <test-method signature="prviateOccasionTypeSelection()[pri:2, instance:org.youCater.userSanityTestCases.ZaraExperienceTestCases@4b6579e8]" started-at="2025-01-31T21:33:56 PKT" name="prviateOccasionTypeSelection" description="SendBidRequest: Verify partner details (About, Menu, Media)" finished-at="2025-01-31T21:33:59 PKT" duration-ms="3150" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- prviateOccasionTypeSelection -->
+        <test-method signature="selectProvider()[pri:3, instance:org.youCater.userSanityTestCases.ZaraExperienceTestCases@4b6579e8]" started-at="2025-01-31T21:33:59 PKT" name="selectProvider" description="SendBidRequest: Verify successful request submission" finished-at="2025-01-31T21:34:04 PKT" duration-ms="4357" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectProvider -->
+        <test-method signature="selectTimeOfDay()[pri:4, instance:org.youCater.userSanityTestCases.ZaraExperienceTestCases@4b6579e8]" started-at="2025-01-31T21:34:04 PKT" name="selectTimeOfDay" description="SendBidRequest: Verify successful request submission" finished-at="2025-01-31T21:34:06 PKT" duration-ms="2142" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectTimeOfDay -->
+        <test-method signature="selectCuisines()[pri:5, instance:org.youCater.userSanityTestCases.ZaraExperienceTestCases@4b6579e8]" started-at="2025-01-31T21:34:06 PKT" name="selectCuisines" description="SendBidRequest: Verify successful request submission" finished-at="2025-01-31T21:34:09 PKT" duration-ms="3485" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectCuisines -->
+        <test-method signature="enterDishes()[pri:6, instance:org.youCater.userSanityTestCases.ZaraExperienceTestCases@4b6579e8]" started-at="2025-01-31T21:34:09 PKT" name="enterDishes" description="SendBidRequest: Verify successful request submission" finished-at="2025-01-31T21:34:12 PKT" duration-ms="2725" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- enterDishes -->
+        <test-method signature="selectCourses()[pri:7, instance:org.youCater.userSanityTestCases.ZaraExperienceTestCases@4b6579e8]" started-at="2025-01-31T21:34:12 PKT" name="selectCourses" description="SendBidRequest: Verify successful request submission" finished-at="2025-01-31T21:34:15 PKT" duration-ms="3346" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectCourses -->
+        <test-method signature="selectLocation()[pri:8, instance:org.youCater.userSanityTestCases.ZaraExperienceTestCases@4b6579e8]" started-at="2025-01-31T21:34:15 PKT" name="selectLocation" description="SendBidRequest: Verify successful request submission" finished-at="2025-01-31T21:34:16 PKT" duration-ms="1124" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectLocation -->
+        <test-method signature="enterGuestAndDate()[pri:9, instance:org.youCater.userSanityTestCases.ZaraExperienceTestCases@4b6579e8]" started-at="2025-01-31T21:34:16 PKT" name="enterGuestAndDate" description="SendBidRequest: Verify successful request submission" finished-at="2025-01-31T21:34:20 PKT" duration-ms="3397" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- enterGuestAndDate -->
+        <test-method signature="selectBudget()[pri:10, instance:org.youCater.userSanityTestCases.ZaraExperienceTestCases@4b6579e8]" started-at="2025-01-31T21:34:20 PKT" name="selectBudget" description="SendBidRequest: Verify successful request submission" finished-at="2025-01-31T21:34:31 PKT" duration-ms="11251" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectBudget -->
+        <test-method signature="signIn()[pri:11, instance:org.youCater.userSanityTestCases.ZaraExperienceTestCases@4b6579e8]" started-at="2025-01-31T21:34:31 PKT" name="signIn" description="PrivateEvent: Verify signIn functionality" finished-at="2025-01-31T21:34:42 PKT" duration-ms="10496" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signIn -->
+        <test-method signature="quotaionsAndGotoHome()[pri:12, instance:org.youCater.userSanityTestCases.ZaraExperienceTestCases@4b6579e8]" started-at="2025-01-31T21:34:42 PKT" name="quotaionsAndGotoHome" description="PrivateEvent: Verify navigation to the home page" finished-at="2025-01-31T21:34:47 PKT" duration-ms="5873" status="FAIL">
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+            <message>
+              <![CDATA[element click intercepted: Element <a aria-label="back-to-home" rel="YouCater noreferrer" class="flex items-center gap-2 text-[#544F53] text-base font-bold" href="/en/home/">...</a> is not clickable at point (683, 541). Other element would receive the click: <div class="modal-sm ">...</div>
+  (Session info: chrome=132.0.6834.160)
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [47be8b87544b9a15801e26a4dc3cc924, clickElement {id=f.662BBBB74D9B61BDB2BCFFFDC2FE6DB5.d.B526415C8163D479B1642015CDD2ACDB.e.187}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 132.0.6834.160, chrome: {chromedriverVersion: 132.0.6834.83 (03d59cf5ecf1..., userDataDir: C:\Users\Admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49637}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49637/devtoo..., se:cdpVersion: 132.0.6834.160, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (47be8b87544b9a15801e26a4dc3cc924)] -> xpath: //*[text()="Back to home"]]
+Session ID: 47be8b87544b9a15801e26a4dc3cc924]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <a aria-label="back-to-home" rel="YouCater noreferrer" class="flex items-center gap-2 text-[#544F53] text-base font-bold" href="/en/home/">...</a> is not clickable at point (683, 541). Other element would receive the click: <div class="modal-sm ">...</div>
+  (Session info: chrome=132.0.6834.160)
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [47be8b87544b9a15801e26a4dc3cc924, clickElement {id=f.662BBBB74D9B61BDB2BCFFFDC2FE6DB5.d.B526415C8163D479B1642015CDD2ACDB.e.187}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 132.0.6834.160, chrome: {chromedriverVersion: 132.0.6834.83 (03d59cf5ecf1..., userDataDir: C:\Users\Admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49637}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49637/devtoo..., se:cdpVersion: 132.0.6834.160, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (47be8b87544b9a15801e26a4dc3cc924)] -> xpath: //*[text()="Back to home"]]
+Session ID: 47be8b87544b9a15801e26a4dc3cc924
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+at jdk.proxy2/jdk.proxy2.$Proxy11.click(Unknown Source)
+at org.youCater.userConfigurationsAndElements.AddEventElements.goToHomePage(AddEventElements.java:462)
+at org.youCater.userSanityTestCases.ZaraExperienceTestCases.quotaionsAndGotoHome(ZaraExperienceTestCases.java:208)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quotaionsAndGotoHome -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:org.youCater.userSanityTestCases.ZaraExperienceTestCases@4b6579e8]" started-at="2025-01-31T21:34:47 PKT" name="tearDown" finished-at="2025-01-31T21:34:48 PKT" duration-ms="286" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- org.youCater.userSanityTestCases.ZaraExperienceTestCases -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
