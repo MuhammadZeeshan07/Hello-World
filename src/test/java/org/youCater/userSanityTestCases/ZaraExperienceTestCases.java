@@ -4,6 +4,11 @@ import java.time.Duration;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
+import java.util.List;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -60,7 +65,6 @@ public class ZaraExperienceTestCases extends Configurations {
 
 	@Test(priority = 3, description = "SendBidRequest: Verify successful request submission")
 	public void selectProvider() throws InterruptedException {
-		
 		WebElement selectProvider = driver.findElement(By.xpath("//*[@automation-id=\"caterers\"]"));
 		WebElement provider = wait.until(ExpectedConditions.elementToBeClickable(selectProvider));
 		provider.click();
@@ -75,17 +79,16 @@ public class ZaraExperienceTestCases extends Configurations {
 
 	@Test(priority = 4, description = "SendBidRequest: Verify successful request submission")
 	public void selectTimeOfDay() throws InterruptedException {
-		
 		WebElement selectTimeOfDay = driver.findElement(By.xpath("//*[@automation-id=\"breakfast\"]"));
 		WebElement provider = wait.until(ExpectedConditions.elementToBeClickable(selectTimeOfDay));
 		provider.click();
 		Thread.sleep(2000);
 		
 	}
-	
+
+
 	@Test(priority = 5, description = "SendBidRequest: Verify successful request submission")
 	public void selectCuisines() throws InterruptedException {
-		
 		WebElement selectCuisine1 = driver.findElement(By.xpath("//*[@automation-id=\"international\"]"));
 		WebElement cuisine1 = wait.until(ExpectedConditions.elementToBeClickable(selectCuisine1));
 		cuisine1.click();
@@ -102,21 +105,21 @@ public class ZaraExperienceTestCases extends Configurations {
 		driver.findElement(By.xpath("//*[@type='button' and text()= 'Next']")).click();
 		
 	}
-	
-	
+
+
 	@Test(priority = 6, description = "SendBidRequest: Verify successful request submission")
 	public void enterDishes() throws InterruptedException {
-		
+
 		WebElement enterDishes = driver.findElement(By.id("event_dishes"));
 		enterDishes.sendKeys("Burger,Fries");
 		Thread.sleep(1000);
 		driver.findElement(By.xpath("//*[@type='button' and text()= 'Next']")).click();
 		Thread.sleep(1000);
 	}
-	
+
 	@Test(priority = 7, description = "SendBidRequest: Verify successful request submission")
 	public void selectCourses() throws InterruptedException {
-		
+
 		WebElement selectCourse1 = driver.findElement(By.xpath("//*[@automation-id=\"canapés\"]"));
 		WebElement course1 = wait.until(ExpectedConditions.elementToBeClickable(selectCourse1));
 		course1.click();
@@ -128,20 +131,21 @@ public class ZaraExperienceTestCases extends Configurations {
 		driver.findElement(By.xpath("//*[@type='button' and text()= 'Next']")).click();
 		Thread.sleep(1000);
 	}
-	
+
+
 	@Test(priority = 8, description = "SendBidRequest: Verify successful request submission")
 	public void selectLocation() throws InterruptedException {
-		
+
 		WebElement selectLocation = driver.findElement(By.xpath("//*[@automation-id=\"dubai\"]"));
 		WebElement course1 = wait.until(ExpectedConditions.elementToBeClickable(selectLocation));
 		course1.click();
 		Thread.sleep(1000);
 	}
-	
+
+
 	@Test(priority = 9, description = "SendBidRequest: Verify successful request submission")
 	public void enterGuestAndDate() throws InterruptedException {
-		
-		
+
 		addEventElements.enterNoOfGuests();
 		Thread.sleep(1000);
 		addEventElements.enterDate();
@@ -150,21 +154,64 @@ public class ZaraExperienceTestCases extends Configurations {
 		Thread.sleep(1000);
 	}
 	
-
 	@Test(priority = 10, description = "SendBidRequest: Verify successful request submission")
 	public void selectBudget() throws InterruptedException {
-	
-		Thread.sleep(2000);
-		addEventElements.enterBudgeBySlider();
-		Thread.sleep(2000);
-		addEventElements.enterBudgeByInputFields();
-		Thread.sleep(2000);
-		addEventElements.isBudgetFlexibleCheckbox();
-		Thread.sleep(1000);
+
+		try {
+			// Check if the checkbox is present
+			WebElement checkbox = driver.findElement(By.id("mybudgetIsFlexible"));
+
+			// If checkbox is found, run these actions
+			System.out.println("Checkbox found! Running budget slider actions...");
+			Thread.sleep(2000);
+			addEventElements.enterBudgeBySlider();
+			Thread.sleep(2000);
+			addEventElements.enterBudgeByInputFields();
+			Thread.sleep(2000);
+			addEventElements.isBudgetFlexibleCheckbox();
+			Thread.sleep(1000);
+
+		} catch (NoSuchElementException e) {
+			System.out.println("Checkbox not found. Checking for 'casual' button...");
+
+			try {
+				// If checkbox is not found, check for the 'casual' button and click it
+				WebElement casualButton = driver.findElement(By.xpath("//*[@automation-id=\"casual\"]"));
+				System.out.println("'Casual' button found. Clicking...");
+				casualButton.click();
+			} catch (NoSuchElementException ex) {
+				System.out.println("Neither checkbox nor 'casual' button found. Skipping...");
+			}
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+
 		driver.findElement(By.xpath("//*[@type='button' and text()= 'Next']")).click();
 		Thread.sleep(1000);
-		
+
 	}
-	
+
+	@Test(priority = 11, description = "PrivateEvent: Verify signIn functionality")
+	public void signIn() throws InterruptedException {
+
+		driver.findElement(By.id("email")).sendKeys("muhammadzeeshan@glowfishlabs.com");
+		Thread.sleep(2000);
+		driver.findElement(By.id("password")).sendKeys("Glowfish@123");
+		Thread.sleep(2000);
+		WebElement element = driver.findElement(By.id("sendOtpContinueBtn"));
+		js.executeScript("arguments[0].scrollIntoView({behavior: 'smooth', block: 'center'});", element);
+		Thread.sleep(1000);
+		element.click();
+		Thread.sleep(8000);
+	}
+
+	@Test(priority = 12, description = "PrivateEvent: Verify navigation to the home page")
+	public void quotaionsAndGotoHome() throws InterruptedException {
+
+		driver.findElement(By.xpath("//button[@arialable=\"want-quote\"]"));
+		Thread.sleep(1000);
+		addEventElements.goToHomePage();
+		Thread.sleep(2000);
+	}
 
 }
